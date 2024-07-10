@@ -1,4 +1,4 @@
-# Project: SUPER MATT- frontend
+# SUPER MATT- frontend
 
 ## Project description
 Super Matt is a C# MVC CRUD Application that uses a Angular for the frontend perform simple CRUD processes for a supermarket inventory.
