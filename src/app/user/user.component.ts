@@ -12,4 +12,12 @@ const randomIndex=Math.floor(Math.random() * DUMMY_USERS.length)
 })
 export class UserComponent {
   selectedUser=DUMMY_USERS[randomIndex]
+
+  get imagePath() {
+    return '/users/' + this.selectedUser.avatar
+  }
+
+  onSelectUser() {
+    console.log("Clicked!");
+  }
 }
