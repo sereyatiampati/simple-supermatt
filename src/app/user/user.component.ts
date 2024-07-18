@@ -1,4 +1,4 @@
-import { Component, computed, Input, input} from '@angular/core';
+import { Component, computed, EventEmitter, Input, input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -11,7 +11,10 @@ export class UserComponent {
   //using Input decorator 
     @Input({required: true}) avatar!: string; //the exclamation simply tells typescript that we know that this will definetely be to some value even if though typescript can't see it from this code
     @Input({required:true}) name!: string;
+    @Output() select = new EventEmitter();
 
+
+     
     //using input signal function
     // avatar = input.required<string>(); //to tell angular that the value will be set outside this component and it will be required we use: avarar = input.required<string>();
     // name = input.required<string>();
@@ -22,6 +25,7 @@ export class UserComponent {
     }
 
   onSelectUser() {
-    
+
   }
 }
+ 
